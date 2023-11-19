@@ -59,14 +59,7 @@ const cartSlice = createSlice({
       });
       state.amount = amount;
       state.total = total;
-    },
-    // checkInCart: (state, cartItem) => {
-    //   const inCart = state.cart.find(
-    //     (item) => item.payload.id === cartItem.payload.id
-    //   );
-    //   if (inCart.payload.inCart) {
-    //   }
-    // },
+    }
   },
 });
 
@@ -79,6 +72,5 @@ export const {
   increase,
   decrease,
   calculateTotal,
-  // checkInCart,
 } = cartSlice.actions;
 export default cartSlice.reducer;
